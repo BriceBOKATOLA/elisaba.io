@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "futura-pt", sans-serif;
+}
+
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.filter {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: brightness(60%);
+  z-index: -1;
+}
+
+.title,
+.title2 {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 20vh;
+  color: #ce913b;
+  font-size: 6rem;
+}
+
+.title2 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.menuBtn {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.menuBtn .btn {
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+.menuBtn .btn::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ce913b;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.menuBtn .btn:hover::after {
+  width: 100%;
+}
+
+.content {
+  margin-top: 70vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.content .presentation {
+  width: 40vw;
+}
+
+.content p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.content .btnNext {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  padding: 20px 30px;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 25px;
+  color: #fff;
+  background: #ce913b;
+}
+
+/* .word {
+  margin: auto;
+  color: white;
+  font: 700 normal 2.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+} */
