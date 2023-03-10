@@ -1,0 +1,16 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background: url(ressources/Manoir.jpg);
+    background-repeat: no-repeat ;
+    /* opacity: 10%; */
+    background-size: cover;
+}
+
+.btnSection .a{
+    display: flex;
+    justify-content: space-around;
+}
